@@ -12,3 +12,25 @@ for(let i=0;i<4;i++){
 }
 
 document.querySelector("#mySquareOne").innerText = mySquare;
+
+// loop to show pyramid
+
+let myPyramid = "";
+
+// indicates line levels
+for(let x=0;x<5;x++){ 
+
+// for the spaces
+  for(let y=0;y<5-x;y++){
+  myPyramid += " ";
+  }
+  // for my stars
+  for(let z=0;z<=x;z++){
+    myPyramid += "* ";
+  }
+  // create a new line for loop"
+  myPyramid += "\n";
+}
+
+
+document.querySelector("#myPyramidOne").innerText = myPyramid;
