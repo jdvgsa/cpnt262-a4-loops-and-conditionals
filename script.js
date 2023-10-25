@@ -32,6 +32,8 @@ for(let x=0;x<5;x++){
   myPyramid += "\n";
 }
 
+document.querySelector("#myPyramidOne").innerText = myPyramid;
+
 /* Challenge #2 Reverse  a string using loop*/
 let myString = 'abcde'; // string length is 5, last letter of string is in index 4
 
@@ -47,5 +49,4 @@ let lengthOfString = myString.length;
 }
 
 document.querySelector("#myReversedString").innerText = myFinalAnswer;
-
 
