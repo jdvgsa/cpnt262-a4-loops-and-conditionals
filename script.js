@@ -20,7 +20,7 @@ let myPyramid = "";
 // indicates line levels
 for(let x=0;x<5;x++){ 
 
-// for the spaces
+// for the spaces so that stars are spaced out
   for(let y=0;y<5-x;y++){
   myPyramid += " ";
   }
@@ -28,9 +28,24 @@ for(let x=0;x<5;x++){
   for(let z=0;z<=x;z++){
     myPyramid += "* ";
   }
-  // create a new line for loop"
+  // create a new line for loop so that all the stars aren't show in the same line
   myPyramid += "\n";
 }
 
+/* Challenge #2 Reverse  a string using loop*/
+let myString = 'abcde'; // string length is 5, last letter of string is in index 4
 
-document.querySelector("#myPyramidOne").innerText = myPyramid;
+// console.log(myString);
+// console.log(myString[4]);
+
+let myFinalAnswer = ""; // should show "e d c b a"
+let lengthOfString = myString.length;
+  for(let i=myString.length-1;i>=0;i--){
+  myFinalAnswer += myString[i];
+  // console.log(myFinalAnswer);
+
+}
+
+document.querySelector("#myReversedString").innerText = myFinalAnswer;
+
+
